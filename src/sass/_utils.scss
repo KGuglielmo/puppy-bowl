@@ -1,0 +1,44 @@
+body {
+	overflow-x: hidden;
+}
+
+.mobile-no-gutter {
+	margin: 0 -15px;
+	@media (min-width: $screen-sm) {
+		margin: 0;
+	}
+}
+
+.mobile-no-margin-bottom {
+	@media (max-width: $screen-sm) {
+		margin-bottom: 0;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.font-family-black {
+	font-family: $font-family-black;
+}
+.font-family-bold {
+	font-family: $font-family-bold;
+}
+.font-family-extra-bold {
+	font-family: $font-family-extra-bold;
+}
+.font-family-light {
+	font-family: $font-family-light;
+}
+.font-family-semi-bold {
+	font-family: $font-family-semi-bold;
+}
+.font-family-thin {
+	font-family: $font-family-thin;
+}
+
+.font-size-large {
+	font-size: $font-size-large;
+}
+

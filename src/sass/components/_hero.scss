@@ -1,0 +1,55 @@
+.hero {
+	overflow: hidden;
+	.bg-primary {
+		padding-top: 55px;
+		padding-bottom: 40px;
+		position: relative;
+		@media (min-width: $screen-sm) {
+			padding-top: 112px;
+			padding-bottom: 34px;
+		}
+	}
+	h1 {
+		position: absolute;
+		left: 50%;
+		margin: 0;
+		top: 0;
+		transform: translate(-50%, -31px);
+		white-space: nowrap;
+		@media (min-width: $screen-sm) {
+			transform: translate(-50%, -63px);
+		}
+		@media (min-width: $screen-md) {
+			transform: translate(-50%, -86px);
+		}
+	}
+
+	&_txt {
+		font-family: $font-family-thin;
+		font-size: $font-size-large;
+		@media (min-width: $screen-sm) {
+			font-size: ceil(($font-size-base * 1.428));
+		}
+	}
+}
+
+.vid-play {
+	margin-top: 27px;
+	p {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}
+
+.btn-vid-play {
+	background: $brand-tertiary;
+	border-radius: 50%;
+	display: block;
+	color: $off-white;
+	font-size: ceil(($font-size-base * 1.142));
+	height: 48px;
+	margin: 0 auto;
+	padding-top: 14px;
+	text-align: center;
+	width: 48px;
+}

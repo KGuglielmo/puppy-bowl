@@ -6,18 +6,34 @@
 
 {% include "partials/hero.html" %}
 
-<h2 class="mobile-no-margin-bottom">BISSELL Pet Foundation</h2>
+<section>
+	<h2 class="mobile-no-margin-bottom">BISSELL Pet Foundation</h2>
+	{% include "partials/grid.html" %}
+</section>
 
-{% include "partials/grid.html" %}
+<section>
+	<h2>Products for Pet Parents</h2>
+	{% include "partials/step-1-2.html" %}
+	<div class="text-center">
+		<a class="view-all" href="#">view all products <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+	</div>
+</section>
 
-<h2>Products for Pet Parents</h2>
+<section>
+	<h2>
+		<span class="visible-xs">Latest from the</span>
+		<span class="hidden-xs">The BISSELL Clean Sweep</span> 
+		Blog
+	</h2>
+	{% include "partials/blog.html" %}
+	<div class="text-center">
+		<a class="view-all" href="#">view all blog posts <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+	</div>
+</section>
 
-<h2>
-	<span class="visible-xs">Latest from the</span>
-	<span class="hidden-xs">The BISSELL Clean Sweep</span> 
-	Blog
-</h2>
-
-<h2>Our Partnerships</h2>
+<section>
+	<h2>Our Partnerships</h2>
+	{% include "partials/partners.html" %}
+</section>
 
 {% endblock %}

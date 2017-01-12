@@ -2,16 +2,31 @@ body {
 	overflow-x: hidden;
 }
 
+.container-fluid {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
 .mobile-no-gutter {
-	margin: 0 -15px;
+	margin: 0 -10px;
+	overflow: hidden;
 	@media (min-width: $screen-sm) {
 		margin: 0;
+		overflow: visible;
 	}
 }
 
 .mobile-no-margin-bottom {
-	@media (max-width: $screen-sm) {
+	@media (max-width: $screen-sm - 1) {
 		margin-bottom: 0;
+	}
+}
+
+.no-gutter {
+	margin: 0;
+	> [class*='col-'] {
+	    padding-right:0;
+	    padding-left:0;
 	}
 }
 
@@ -40,5 +55,44 @@ img {
 
 .font-size-large {
 	font-size: $font-size-large;
+}
+
+.row-table-middle.row {
+	display: table;
+	width: 100%;
+	> [class*='col-'] {
+		display: table-cell;
+		float: none;
+		vertical-align: middle;
+	}
+}
+
+.divider {
+	border-top: 1px solid #ffffff;
+	margin: 15px 0;
+}
+
+@media (min-width: $screen-sm) {
+	.col-sm-margin-left-3 {
+		margin-left: -25%;
+	}
+}
+
+section {
+	border-bottom: 1px solid #E7E7E7;
+	padding-bottom: 40px;
+	@media (min-width: $screen-sm) {
+		border-color: #979797;
+	}
+}
+
+.view-all {
+	display: block;
+	font-family: $font-family-semi-bold;
+	margin-top: 50px;
+	.glyphicon {
+		font-size: ceil(($font-size-base * 0.714));
+		margin-left: 18px;
+	}
 }
 

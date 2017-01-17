@@ -82,6 +82,9 @@
 			font-family: $font-family-semi-bold;
 			font-size: $font-size-small;
 			text-transform: uppercase;
+			&:hover {
+				color: $brand-primary;
+			}
 		}
 	}
 }

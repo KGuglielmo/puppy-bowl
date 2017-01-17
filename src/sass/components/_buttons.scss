@@ -1,5 +1,9 @@
 .btn {
+	position: relative;
+	font-family: $font-family-semi-bold;
 	font-size: $font-size-small;
+	// height: 31px;
+	transition: all 0.3s ease;
 }
 
 .btn-secondary {
@@ -8,4 +12,14 @@
 
 .btn-tertiary {
 	@include button-variant($btn-tertiary-color, $btn-tertiary-bg, $btn-tertiary-border);
+}
+
+.btn-lg {
+	font-size: ceil(($font-size-base * 1.142));
+}
+
+.btn-round {
+	border-radius: 50%;
+	height: 48px;
+	width: 48px;
 }

@@ -1,0 +1,28 @@
+.slider {
+	.slick-prev,
+	.slick-next {
+		color: #ffffff;
+		bottom: 20px;
+		top: auto;
+		transform: none;
+		z-index: 10;
+		&:before {
+			font-family: 'Glyphicons Halflings';
+			font-size: $font-size-base;
+			opacity: 1;
+		}
+	}
+	.slick-prev {
+		left: auto;
+		right: 35px;
+		&:before {
+			content: "\e079";
+		}
+	}
+	.slick-next {
+		right: 15px;
+		&:before {
+			content: "\e080";
+		}
+	}
+}

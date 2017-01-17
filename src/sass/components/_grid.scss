@@ -31,6 +31,13 @@
 	}
 }
 
+.quote-img {
+	max-height: 194px;
+	@media (min-width: $screen-sm) {
+		max-height: none;
+	}
+}
+
 
 .quote {
 	position: relative;
@@ -75,6 +82,7 @@ blockquote {
 	}
 	.block-large {
 		z-index: 5;
+		position: relative;
 		@media (min-width: $screen-sm) {
 			margin-top: 15px;
 		}
@@ -84,6 +92,12 @@ blockquote {
 		position: relative;
 		@media (min-width: $screen-sm) {
 			margin-top: 0;
+			&:hover {
+				z-index: 10;
+			}
+		}
+		img {
+			width: 100%;
 		}
 	}
 	&.event2 {
@@ -222,7 +236,7 @@ blockquote {
 .adopted {
 	background-repeat: no-repeat;
 	background-position: 25%;
-	background-size: auto 100%;
+	background-size: cover;
 	height: 260px;
 	@media (min-width: $screen-sm) {
 		background-position: 30%;

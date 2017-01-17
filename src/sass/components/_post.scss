@@ -18,6 +18,14 @@
 	border: 1px solid #BFBDBD;
 	.post-img {
 		position: relative;
+		max-height: 200px;
+		overflow: hidden;
+		@media (min-width: $screen-sm) {
+			max-height: 290px;
+		}
+		img {
+			width: 100%;
+		}
 	}
 	.post-overlay {
 		background: rgba($off-white, .8);
@@ -33,6 +41,7 @@
 			position: absolute;
 			transform: translate(-50%, -50%);
 			max-width: 185px;
+			width: auto;
 			@media (min-width: $screen-sm) {
 				max-width: none;
 			}

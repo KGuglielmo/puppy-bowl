@@ -66,7 +66,7 @@ gulp.task('sass', function() {
 
 gulp.task('images', function() {
 	return gulp.src(paths.images.all)
-		.pipe(imagemin())
+		// .pipe(imagemin())
 		.pipe(gulp.dest(paths.images.dest))
 		.pipe(browserSync.reload({
       stream: true

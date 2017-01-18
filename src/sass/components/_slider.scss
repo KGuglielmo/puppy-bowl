@@ -1,3 +1,9 @@
+.slick-list {
+  .slick-loading & {
+    background: #fff url("/images/ajax-loader.gif") center center no-repeat;
+  }
+}
+
 .slider {
 	.slick-prev,
 	.slick-next {

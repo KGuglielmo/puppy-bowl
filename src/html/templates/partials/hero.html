@@ -8,9 +8,27 @@
 
 				<div class="vid-play">
 					<p class="font-family-extra-bold">Watch the Whole Story</p>
-					<a href="#" class="btn btn-tertiary btn-lg btn-round btn-hover">
-						<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-					</a>
+					<div class="btn-iframe-wrapper">
+						<a href="#" class="btn btn-tertiary btn-lg btn-round btn-hover btn-video-play" data-toggle="modal" data-target="#videoModal">
+							<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+						</a>
+						<!-- <iframe src="https://www.youtube.com/embed/15SdPnof0FY?showinfo=0" frameborder="0"></iframe> -->
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	<div class="container-fluid button-container">
+						      <button type="button" class="close btn-video-stop" data-dismiss="modal" aria-label="Close">
+						      	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+						      </button>
+						    </div>
+					      <div class="video-wrapper">
+					      	<div id="player" class="YTplayer"></div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</div>

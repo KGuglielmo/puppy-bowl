@@ -1,45 +1,47 @@
-a.hover-effect {
-	position: relative;
-	padding: 10px 0;
-	transition: color 0.3s, padding 0.3s;
-	&:before,
-	&:after {
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: 2px;
-		background: $brand-primary;
-		content: '';
-		opacity: 0;
-		transition: opacity 0.3s, transform 0.3s;
-		transform: translateY(-10px);
+	
+	a.hover-effect {
+		position: relative;
+		padding: 10px 0;
+		transition: color 0.3s, padding 0.3s;
+		&:before,
+		&:after {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: $brand-primary;
+			content: '';
+			opacity: 0;
+			transition: opacity 0.3s, transform 0.3s;
+			transform: translateY(-10px);
+		}
+
+		&:before {
+			top: 0;
+			transform: translateY(-10px);
+		}
+
+		&:after {
+			bottom: 0;
+			transform: translateY(10px);
+		}
+
+		&:hover,
+		&:focus {
+			color: $brand-primary;
+			text-decoration: none;
+			padding: 10px;
+		}
+
+		&:hover:before,
+		&:focus:before,
+		&:hover:after,
+		&:focus:after {
+			opacity: 1;
+			transform: translateY(0px);
+		}
 	}
 
-	&:before {
-		top: 0;
-		transform: translateY(-10px);
-	}
-
-	&:after {
-		bottom: 0;
-		transform: translateY(10px);
-	}
-
-	&:hover,
-	&:focus {
-		color: $brand-primary;
-		text-decoration: none;
-		padding: 10px;
-	}
-
-	&:hover:before,
-	&:focus:before,
-	&:hover:after,
-	&:focus:after {
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
 
 
 

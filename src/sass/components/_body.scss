@@ -1,0 +1,15 @@
+body#PuppyBowlPetHappens {
+	margin: 0;
+	font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+  overflow-x: hidden;
+}
+
+.slick-list {
+  .slick-loading & {
+    background: #fff url("/images/ajax-loader.gif") center center no-repeat;
+  }
+}

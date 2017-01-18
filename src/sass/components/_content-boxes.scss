@@ -1,82 +1,84 @@
-.bg-primary {
-	color: $off-white;
-	h3 {
+	
+	.bg-primary {
 		color: $off-white;
-		small {
+		h3 {
 			color: $off-white;
+			small {
+				color: $off-white;
+			}
+		}
+		&.opacity-90 {
+			background: rgba($brand-primary, 0.9);
+		}
+		.divider {
+			border-color: #979797;
 		}
 	}
-	&.opacity-90 {
-		background: rgba($brand-primary, 0.9);
-	}
-	.divider {
-		border-color: #979797;
-	}
-}
 
-.block-large {
-	height: 197px;
-	padding: 16px;
-	position: relative;
-	transition: height 0.3s;
-	@media (min-width: $screen-md) {
-		height: 278px;
-	}
+	.block-large {
+		height: 197px;
+		padding: 16px;
+		position: relative;
+		transition: height 0.3s;
+		@media (min-width: $screen-md) {
+			height: 278px;
+		}
 
-	h3 {
-		margin: 0;
-		position: absolute;
-		top: 40%;
-		transform: translate(0, -40%);
-	}
+		h3 {
+			margin: 0;
+			position: absolute;
+			top: 40%;
+			transform: translate(0, -40%);
+		}
 
-	.details {
-		position: absolute;
-		bottom: 16px;
-	}
-}
-
-.block-small {
-	padding: 40px 15px 10px;
-	position: relative;
-	margin-top: -65px;
-	@media (min-width: $screen-sm) {
-		margin-top: -105px;
-	}
-	h3 {
-		margin: -17px 0 0 0;
-		line-height: 1;
-		position: absolute;
-		top: 0;
-	}
-	.name-breed {
-		font-family: $font-family-extra-bold;
-	}
-	.name-breed, .details {
-		line-height: 1.3;
-	}
-}
-
-.bg-offwhite {
-	background: $off-white;
-	h3 {
-		small {
-			color: $text-color;
+		.details {
+			position: absolute;
+			bottom: 16px;
 		}
 	}
-	.divider {
-		border-color: #979797;
-	}
-}
 
-.bg-gray-dark {
-	background: $gray-dark;
-	color: #ffffff;
-	h3 {
+	.block-small {
+		padding: 40px 15px 10px;
+		position: relative;
+		margin-top: -65px;
+		@media (min-width: $screen-sm) {
+			margin-top: -105px;
+		}
+		h3 {
+			margin: -17px 0 0 0;
+			line-height: 1;
+			position: absolute;
+			top: 0;
+		}
+		.name-breed {
+			font-family: $font-family-extra-bold;
+		}
+		.name-breed, .details {
+			line-height: 1.3;
+		}
+	}
+
+	.bg-offwhite {
+		background: $off-white;
+		h3 {
+			small {
+				color: $text-color;
+			}
+		}
+		.divider {
+			border-color: #979797;
+		}
+	}
+
+	.bg-gray-dark {
+		background: $gray-dark;
 		color: #ffffff;
-		margin: 0;
-		small {
+		h3 {
 			color: #ffffff;
+			margin: 0;
+			small {
+				color: #ffffff;
+			}
 		}
 	}
-}
+

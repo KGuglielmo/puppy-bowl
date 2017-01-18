@@ -3,26 +3,36 @@
 
 // Boostrap
 @import "variables-custom";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+#PuppyBowlPetHappens {	
+	@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+}
 
 // Mixins
 @import "mixins";
 
-@import "utils";
+#PuppyBowlPetHappens {	
+	@import "utils";
+}
 
 // Plugins
-@import "./node_modules/slick-carousel/slick/slick.scss";
-@import "./node_modules/slick-carousel/slick/slick-theme.scss";
+// #PuppyBowlPetHappens {	
+	@import "./node_modules/slick-carousel/slick/slick.scss";
+	@import "./node_modules/slick-carousel/slick/slick-theme.scss";
+// }
+
+@import "components/body";
 
 // Components
-@import "components/buttons";
-@import "components/headers";
-@import "components/content-boxes";
-@import "components/hero";
-@import "components/grid";
-@import "components/step-1-2";
-@import "components/post";
-@import "components/products";
-@import "components/slider";
-@import "components/links";
-@import "components/modal";
+#PuppyBowlPetHappens {	
+	@import "components/buttons";
+	@import "components/headers";
+	@import "components/content-boxes";
+	@import "components/hero";
+	@import "components/grid";
+	@import "components/step-1-2";
+	@import "components/post";
+	@import "components/products";
+	@import "components/slider";
+	@import "components/links";
+	@import "components/modal";
+}

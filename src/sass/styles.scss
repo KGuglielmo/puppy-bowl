@@ -7,23 +7,20 @@
 	@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 }
 
-// Mixins
-@import "mixins";
-
-#PuppyBowlPetHappens {	
-	@import "utils";
-}
-
-// Plugins
-// #PuppyBowlPetHappens {	
-	@import "./node_modules/slick-carousel/slick/slick.scss";
-	@import "./node_modules/slick-carousel/slick/slick-theme.scss";
-// }
-
 @import "components/body";
 
-// Components
-#PuppyBowlPetHappens {	
+#PuppyBowlPetHappens {
+	// Mixins
+	@import "mixins";
+	
+	// Utilities
+	@import "utils";
+
+	// Plugins
+	@import "./node_modules/slick-carousel/slick/slick.scss";
+	@import "./node_modules/slick-carousel/slick/slick-theme.scss";
+
+	// Components
 	@import "components/buttons";
 	@import "components/headers";
 	@import "components/content-boxes";

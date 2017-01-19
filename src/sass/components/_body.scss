@@ -1,4 +1,8 @@
-body#PuppyBowlPetHappens {
+body {
+	margin: 0;
+}
+
+#PuppyBowlPetHappens {
 	margin: 0;
 	font-family: $font-family-base;
   font-size: $font-size-base;
@@ -6,10 +10,4 @@ body#PuppyBowlPetHappens {
   color: $text-color;
   background-color: $body-bg;
   overflow-x: hidden;
-}
-
-.slick-list {
-  .slick-loading & {
-    background: #fff url("/images/ajax-loader.gif") center center no-repeat;
-  }
 }

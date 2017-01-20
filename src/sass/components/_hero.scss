@@ -1,73 +1,73 @@
-	
-	.hero {
-		.bg-primary {
-			padding-top: 55px;
-			padding-bottom: 40px;
-			position: relative;
-			@media (min-width: $screen-sm) {
-				padding-top: 112px;
-				padding-bottom: 34px;
-			}
-		}
-		h1 {
-			position: absolute;
-			left: 50%;
-			margin: 0;
-			top: 0;
-			transform: translate(-50%, -31px);
-			white-space: nowrap;
-			@media (min-width: $screen-sm) {
-				transform: translate(-50%, -63px);
-			}
-			@media (min-width: $screen-md) {
-				transform: translate(-50%, -86px);
-			}
-		}
-
-		&_txt {
-			font-family: $font-family-thin;
-			font-size: $font-size-large;
-			@media (min-width: $screen-sm) {
-				font-size: ceil(($font-size-base * 1.428));
-			}
-		}
-	}
-
-	.vid-play {
-		margin-top: 27px;
-		p {
-			letter-spacing: 2px;
-			text-transform: uppercase;
-		}
-	}
-
-	.btn-iframe-wrapper {
+.hero {
+	.bg-primary {
+		padding-top: 55px;
+		padding-bottom: 40px;
 		position: relative;
-		overflow: hidden;
-		.btn {
-			position: relative;
+		@media (min-width: $screen-sm) {
+			padding-top: 112px;
+			padding-bottom: 34px;
 		}
-		iframe {
-			height: 100%;
-			position: absolute;
-			left: 0;
-			z-index: 20;
-			opacity: 0;
+	}
+	h1 {
+		position: absolute;
+		left: 50%;
+		margin: 0;
+		top: 0;
+		transform: translate(-50%, -31px);
+		white-space: nowrap;
+		@media (min-width: $screen-sm) {
+			transform: translate(-50%, -63px);
+		}
+		@media (min-width: $screen-md) {
+			transform: translate(-50%, -86px);
 		}
 	}
 
-	.video-wrapper {
-		position: relative;
-		padding-bottom: 56.25%; /* 16:9 */
-		padding-top: 25px;
-		height: 0;
-		iframe, .YTplayer {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
+	&_txt {
+		font-family: $font-family-thin;
+		font-size: $font-size-large;
+		@media (min-width: $screen-sm) {
+			font-size: ceil(($font-size-base * 1.428));
 		}
 	}
+}
+
+.vid-play {
+	margin-top: 27px;
+	p {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}
+
+.btn-iframe-wrapper {
+	position: relative;
+	overflow: hidden;
+	.btn {
+		position: relative;
+	}
+	iframe {
+		height: 100%;
+		position: absolute;
+		left: 0;
+		z-index: 20;
+		opacity: 0;
+	}
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	z-index: 1;
+	iframe, .YTplayer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
 
 

@@ -1,9 +1,11 @@
 // Custom Fonts
 @import "fonts";
 
-// Boostrap
+// Variables
 @import "variables-custom";
+
 #PuppyBowlPetHappens {	
+	// Boostrap
 	@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 }
 
@@ -22,7 +24,7 @@
 
 	// Components
 	@import "components/buttons";
-	@import "components/headers";
+	@import "components/type";
 	@import "components/content-boxes";
 	@import "components/hero";
 	@import "components/grid";

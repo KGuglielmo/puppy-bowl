@@ -11,3 +11,12 @@ body {
   background-color: $body-bg;
   overflow-x: hidden;
 }
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-open #PuppyBowlPetHappens .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}

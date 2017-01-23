@@ -1,106 +1,104 @@
-
-	.products {
-		margin-top: 25px;
+.products {
+	margin-top: 25px;
+	@media (min-width: $screen-sm) {
+		margin: 25px -4px 0;
+	}
+	.slick-slide {
+		margin: 0 2.5px;
 		@media (min-width: $screen-sm) {
-			margin: 25px -4px 0;
-		}
-		.slick-slide {
-			margin: 0 2.5px;
-			@media (min-width: $screen-sm) {
-				margin: 0 4px;
-			}
+			margin: 0 4px;
 		}
 	}
+}
 
-	.product {
-		&-img {
-			position: relative;
+.product {
+	&-img {
+		position: relative;
+	}
+	&-discount-cta {
+		background: $brand-secondary;
+		color: #ffffff;
+		font-family: $font-family-semi-bold;
+		font-size: ceil(($font-size-base * 1.714));
+		line-height: 1;
+		padding-top: 12px;
+		position: absolute;
+		left: 10px;
+		top: 0;
+		height: 61px;
+		width: 61px;
+		@media (min-width: $screen-sm) {
+			font-size: ceil(($font-size-base * 2.142));
+			padding-top: 15px;
+			height: 71px;
+			width: 71px;
 		}
-		&-discount-cta {
-			background: $brand-secondary;
-			color: #ffffff;
-			font-family: $font-family-semi-bold;
-			font-size: ceil(($font-size-base * 1.714));
-			line-height: 1;
-			padding-top: 12px;
-			position: absolute;
-			left: 10px;
-			top: 0;
-			height: 61px;
-			width: 61px;
-			@media (min-width: $screen-sm) {
-				font-size: ceil(($font-size-base * 2.142));
-				padding-top: 15px;
-				height: 71px;
-				width: 71px;
-			}
-			span {
-				display: block;
-				font-family: $font-family-bold;
-				font-size: $font-size-small;
-				text-transform: uppercase;
-				@media (min-width: $screen-sm) {
-					font-size: $font-size-base;
-				}
-			}
-		}
-		&-details {
-			background: $off-white;
-			height: 140px;
-			position: relative;
-			@media (min-width: $screen-sm) {
-				height: 155px;
-			}
-			.btn {
-				position: absolute;
-				bottom: 0;
-			}
-		}
-		&-name,
-		&-code {
-			color: $brand-primary;
+		span {
+			display: block;
 			font-family: $font-family-bold;
-		}
-		&-name {
-			padding: 20px 0 5px;
+			font-size: $font-size-small;
+			text-transform: uppercase;
 			@media (min-width: $screen-sm) {
-				padding: 25px 0 10px;
+				font-size: $font-size-base;
 			}
-			a.hover-effect {
-				&:hover,
-				&:focus {
-					padding-left: 0;
-					padding-right: 0;
-				}
-			}
-		}
-		&-price {
-			color: $brand-tertiary;
-			font-family: $font-family-bold;
-			padding-bottom: 25px;
-			&.product-discount {
-				padding-bottom: 5px;
-				@media (min-width: $screen-sm) {
-					padding-bottom: 10px;
-				}
-				ul {
-					margin: 0;
-				}
-				li {
-					display: inline-block;
-					&:first-child {
-						text-decoration: line-through;
-						margin-right: 55px;
-					}
-					&:last-child {
-						color: $brand-secondary;
-					}
-				}
-			}
-		}
-		&-code {
-			font-size: ceil(($font-size-base * 0.642));
-			// padding-bottom: 13px;
 		}
 	}
+	&-details {
+		background: $off-white;
+		height: 140px;
+		position: relative;
+		@media (min-width: $screen-sm) {
+			height: 155px;
+		}
+		.btn {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	&-name,
+	&-code {
+		color: $brand-primary;
+		font-family: $font-family-bold;
+	}
+	&-name {
+		padding: 20px 0 5px;
+		@media (min-width: $screen-sm) {
+			padding: 25px 0 10px;
+		}
+		a.hover-effect {
+			&:hover,
+			&:focus {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	&-price {
+		color: $brand-tertiary;
+		font-family: $font-family-bold;
+		padding-bottom: 25px;
+		&.product-discount {
+			padding-bottom: 5px;
+			@media (min-width: $screen-sm) {
+				padding-bottom: 10px;
+			}
+			ul {
+				margin: 0;
+			}
+			li {
+				display: inline-block;
+				&:first-child {
+					text-decoration: line-through;
+					margin-right: 55px;
+				}
+				&:last-child {
+					color: $brand-secondary;
+				}
+			}
+		}
+	}
+	&-code {
+		font-size: ceil(($font-size-base * 0.642));
+	}
+}
 

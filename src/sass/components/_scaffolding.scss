@@ -1,0 +1,25 @@
+section {
+	border-bottom: 1px solid #E7E7E7;
+	padding-bottom: 40px;
+	@media (min-width: $screen-sm) {
+		border-color: #979797;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+img {
+	@extend .img-responsive;
+}
+
+.mobile-no-margin-bottom {
+	@media (max-width: $screen-sm - 1) {
+		margin-bottom: 0;
+	}
+}
+
+.divider {
+	border-top: 1px solid #ffffff;
+	margin: 15px 0;
+}

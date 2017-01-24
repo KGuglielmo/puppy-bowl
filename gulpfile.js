@@ -52,7 +52,7 @@ gulp.task('serve', function() {
 
 gulp.task('sass', function() {
 	return gulp.src(paths.styles.all)
-		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false

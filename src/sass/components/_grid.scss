@@ -1,6 +1,9 @@
 .container-fluid {
 	max-width: 980px;
 	margin: 0 auto;
+	@media (min-width: $screen-sm) {
+		padding: 0;
+	}
 }
 
 .mobile-no-gutter {

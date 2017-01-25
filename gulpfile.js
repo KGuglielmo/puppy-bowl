@@ -39,6 +39,10 @@ var paths = {
 		all: 'src/html/**/*.html',
 		pages: 'src/html/pages/**/*.html',
 		templates: 'src/html/templates'
+	},
+	assets: {
+		all: 'src/bissell-assets/**',
+		dest: 'build/js'
 	}
 };
 
@@ -76,6 +80,14 @@ gulp.task('images', function() {
 gulp.task('fonts', function() {
 	return gulp.src(paths.fonts.all)
 		.pipe(gulp.dest(paths.fonts.dest))
+		.pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+gulp.task('bissell-assets', function() {
+	return gulp.src(paths.assets.all)
+		.pipe(gulp.dest(paths.assets.dest))
 		.pipe(browserSync.reload({
       stream: true
     }))
@@ -122,11 +134,12 @@ gulp.task('watch', ['serve'], function () {
   gulp.watch(paths.fonts.all, ['fonts']);
   gulp.watch(paths.html.all, ['nunjucks']);
   gulp.watch(paths.scripts.all, ['browserify']);
+  gulp.watch(paths.assets.all, ['bissell-assets']);
 });
 
 gulp.task('clean-build', function() {
 	del(paths.build.all);
 });
 
-gulp.task('default', ['sass', 'browserify', 'images', 'fonts', 'nunjucks', 'watch']);
+gulp.task('default', ['sass', 'browserify', 'bissell-assets', 'images', 'fonts', 'nunjucks', 'watch']);
 

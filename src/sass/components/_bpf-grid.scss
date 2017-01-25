@@ -189,6 +189,8 @@ blockquote {
 }
 
 .location-list {
+	max-height: none;
+	overflow: initial;
 	@media (min-width: $screen-sm) {
 		padding-right: 20px;
 		margin-bottom: 45px;

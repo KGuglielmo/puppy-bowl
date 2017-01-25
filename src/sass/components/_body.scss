@@ -10,6 +10,16 @@ body {
 	margin: 0;
 }
 
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  background-position: 0 40px;
+  @media (min-width: 768px) {
+    display: block;
+    width: 960px;
+  }
+}
+
 .modal-open {
   overflow: hidden;
   #PuppyBowlPetHappens .modal {

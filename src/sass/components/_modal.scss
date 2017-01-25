@@ -17,6 +17,9 @@
 	border-radius: 0;
 	box-shadow: none;
 	text-align: left;
+	display: block;
+	max-width: none;
+
 	button.close {
 		position: absolute;
 		right: 10px;

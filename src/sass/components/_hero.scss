@@ -15,11 +15,11 @@
 		top: 0;
 		transform: translate(-50%, -31px);
 		white-space: nowrap;
+		// @media (min-width: $screen-sm) {
+		// 	transform: translate(-50%, -63px);
+		// }
 		@media (min-width: $screen-sm) {
-			transform: translate(-50%, -63px);
-		}
-		@media (min-width: $screen-md) {
-			transform: translate(-50%, -86px);
+			transform: translate(-50%, -73px);
 		}
 	}
 

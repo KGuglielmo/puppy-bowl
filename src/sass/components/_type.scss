@@ -2,11 +2,11 @@ h1, .h1 {
 	color: $gray-lightest;
 	font-family: $font-family-black;
 	text-transform: uppercase;
+	// @media (min-width: $screen-sm) {
+	// 	font-size: ceil(($font-size-base * 8.2142)); // ~115
+	// }
 	@media (min-width: $screen-sm) {
-		font-size: ceil(($font-size-base * 8.2142)); // ~115
-	}
-	@media (min-width: $screen-md) {
-		font-size: ceil(($font-size-base * 11.1429)); // ~157
+		font-size: ceil(($font-size-base * 10)); // ~157
 	}
 } 
 
@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .lead {
-	font-family: $font-family-thin;
+	font-family: $font-family-light;
   font-size: $font-size-large;
   @media (min-width: $screen-sm) {
     font-size: ceil(($font-size-base * 1.428));

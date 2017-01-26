@@ -124,10 +124,11 @@ blockquote {
 			margin-top: 0;
 			transition: 0.3s linear;
 			z-index: 1;
-			opacity: 1;
-			animation: out 0.4s linear forwards;
+			// opacity: 1;
+			// animation: out 0.4s linear forwards;
 			&:hover {
-				animation: in 0.4s linear forwards;
+				z-index: 6;
+				// animation: in 0.4s linear forwards;
 			}
 		}
 		img {
@@ -261,6 +262,7 @@ blockquote {
 		margin-top: -70px;
 	}
 	h3 {
+		line-height: 1;
 		@media (min-width: $screen-sm) {
 			padding: 0 10px;
 			font-size: ceil(($font-size-base * 2.142));
@@ -280,6 +282,9 @@ blockquote {
 			}
 		}
 	}
+	.divider {
+		width: 100px;
+	}
 	p {
 		margin-bottom: 30px;
 	}
@@ -293,7 +298,10 @@ blockquote {
 		margin: 0;
 	}
 	h3 {
-		margin: 0;
+		margin: 0 0 3px;
+	}
+	.divider {
+		width: 75px;
 	}
 	p {
 		margin-bottom: 30px;

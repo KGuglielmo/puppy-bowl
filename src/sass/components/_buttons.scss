@@ -4,10 +4,12 @@
 	font-size: $font-size-small;
 	margin-top: 0;
 	transition: all 0.3s ease;
+	border-width: 0;
 }
 
 a.btn {
 	&:before {
+		content: initial;
 		margin-left: 0;
 		margin-top: 0;
 		position: relative;
@@ -16,10 +18,18 @@ a.btn {
 
 .btn-secondary {
 	@include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+	&:hover,
+	&:focus {
+		background: #9E0F14 !important;
+	}
 }
 
 .btn-tertiary {
 	@include button-variant($btn-tertiary-color, $btn-tertiary-bg, $btn-tertiary-border);
+	&:hover,
+	&:focus {
+		background: #0078AA !important;
+	}
 }
 
 .btn-lg {

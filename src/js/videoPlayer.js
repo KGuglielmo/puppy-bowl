@@ -1,5 +1,3 @@
-var $ = require('jquery');
-
 function createYT() {
   if ($('#PuppyBowlPetHappens .YTplayer').length > 0) {
     var tag = document.createElement('script');

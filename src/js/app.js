@@ -6,7 +6,7 @@ var modal = require('../../node_modules/bootstrap-sass/assets/javascripts/bootst
 var videoPlayer = require('./videoPlayer');
 var sliders = require('./sliders');
 
-$(document).ready( function (){
+$(document).ready( function (){ 
   videoPlayer();
   sliders();
 });
